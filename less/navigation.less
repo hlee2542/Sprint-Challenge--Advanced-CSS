@@ -1,1 +1,20 @@
 // Navigation code here
+.top-container {
+    background-color: @nav-bg;
+    padding-bottom: 2%;
+    h1 {
+        text-align: center;
+        font-size: @spacewalkers-size;
+        padding: 2% 0%;
+    }
+    .nav-container {
+        .flex-justify(row, space-between);
+        margin: 0% auto;
+        padding: 0% 17%;
+        nav {
+            width: 17%;
+            text-align: center;
+            .font-chooser(@nav-size, @nav-font);
+        }
+    }
+}
