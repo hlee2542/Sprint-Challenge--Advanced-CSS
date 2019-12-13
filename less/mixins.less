@@ -1,1 +1,21 @@
 // Mixins Here
+.flex-justify(@dir, @space) {
+    display: flex;
+    flex-direction: @dir;
+    justify-content: @space;
+}
+
+.font-chooser(@size, @family) {
+    font-size: @size;
+    font-family: @family;
+}
+
+.btn-maker(@width, @padding, @bg, @font-color) {
+    width: @width;
+    font-size: @btn-txt-size;
+    color: @font-color;
+    background-color: @bg;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: @padding 0%;
+}
